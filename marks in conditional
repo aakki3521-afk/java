@@ -1,0 +1,15 @@
+public class jdm {
+    static void main(String[] args) {
+        int a=60;
+        //System.out.println(a);
+        int b=70;
+        //System.out.println(b);
+        int res=a+b/2;
+        if(res>=50){
+            System.out.println("pass");
+        }else{
+            System.out.println("fail");
+
+        }
+    }
+}
