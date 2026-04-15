@@ -1,0 +1,67 @@
+import java.util.Scanner;
+public class smoker {
+    static void main(String[] args) {
+        Scanner scan=new Scanner(System.in);
+        int age=scan.nextInt();
+        System.out.println(age);
+        String smoking= scan.next();
+        System.out.println(smoking);
+        String existing=scan.next();
+        System.out.println(existing);
+        String coverage=scan.next();
+        System.out.println(coverage);
+        int basic=0;
+        if(coverage.equals("basic")){
+            if(age>=18 && age<=30){
+                  basic=200;
+            }else if(age>=31 && age<=50){
+                 basic=250;
+            }else if(age>=51 && age<=65){
+                 basic=350;
+            }else if(age>=66){
+                 basic=400;
+            }
+        }else if(coverage.equals("standard")) {
+            if (age >= 18 && age <= 30) {
+                 basic = 300;
+            } else if (age >= 18 && age <= 30) {
+                 basic=350;
+
+            }else if(age>=51 && age<=65){
+                 basic=450;
+            }else if(age>=66){
+                 basic=550;
+            }
+
+
+        }else if(coverage.equals("premium")){
+            if(age>=18 && age<=30){
+                 basic=500;
+            }else if(age>=31 && age<=50){
+                 basic=600;
+            }else if(age>=51 && age<=65){
+                 basic=700;
+            }else if(age>=66){
+                 basic=800;
+
+
+            }
+        }
+        System.out.println(basic);
+        double risk = 0;
+         if(smoking.equals("smoking")){
+             risk= (40/100)+ (double)(basic);
+        }else if(existing.equals("yes")){
+             risk=30/100+(double)(basic);
+        }else if(smoking.equals("smoking") && (existing.equals("yes"))){
+             risk=70/100+(double)(basic);
+         }
+        System.out.println(risk);
+
+        double total;
+         total=basic+risk;
+         System.out.println(total);
+
+
+    }
+}
