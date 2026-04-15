@@ -1,0 +1,60 @@
+import java.util.Scanner;
+public class ranges {
+    static void main(String[] args) {
+        Scanner akki = new Scanner(System.in);
+        int score = akki.nextInt();
+        Double income = akki.nextDouble();
+        Double dept = akki.nextDouble();
+        String loan = akki.next();
+        String range = "";
+        String tier = "";
+        System.out.println(score);
+        System.out.println(income);
+        System.out.println(dept);
+        System.out.println(loan);
+
+
+        if (score >= 750) {
+            range = "Excellent";
+        } else if (score >= 700 && score <= 749) {
+            range = "good";
+
+        } else if (score >= 650 && score <= 699) {
+            range = "fair";
+        } else {
+            range = "poor";
+        }
+        if (dept <= 30) {
+            tier = "low";
+        } else if (dept >= 31 && dept <= 40) {
+            tier = "moderate";
+        } else {
+            tier = "high";
+        }
+
+        String type = "";
+
+        if (loan.equals("home"))
+        {
+            if (range.equals("Excellent") && tier.equals("low")) {
+                type = "Approved";
+            } else if (range.equals("good") && tier.equals("moderate")) {
+                type = "need";
+            }
+        }
+        else if(loan.equals("personal")){
+            if(range.equals("Excellent") && tier.equals("low")){
+               type="Approad" ;
+            }else if(tier.equals("fair") && tier.equals("moderate")){
+                type="needs";
+            }}
+
+
+
+
+
+            }
+        }
+
+
+
