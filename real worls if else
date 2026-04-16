@@ -1,0 +1,73 @@
+import java.util.Scanner;
+public class realworld {
+    static void main(String[] args) {
+        Scanner scan = new Scanner(System.in);
+        String tier = scan.next();
+        Double cart = scan.nextDouble();
+        String product = scan.next();
+        String membership = scan.next();
+        System.out.println(tier);
+        System.out.println(cart);
+        System.out.println(product);
+        System.out.println(membership);
+        double loyal = 0;
+
+        if (tier.equals("bronze")) {
+            loyal = 5 / 100;
+            System.out.println(loyal);
+        } else if (tier.equals("silver")) {
+            loyal = 8 / 100;
+            System.out.println(loyal);
+
+        } else if (tier.equals("gold")) {
+            loyal = 12 / 100;
+            System.out.println(loyal);
+
+        } else if (tier.equals("platinum")) {
+            loyal = 15 / 100;
+            System.out.println(loyal);
+        }
+        double value=0;
+        if(cart>=500 && cart<=999){
+            value+=3;
+            System.out.println(value);}
+        else if(cart>=1000 && cart<=1999){
+            value+=5;
+            System.out.println(value);
+        }else if(cart>=2000){
+            value+=7;
+            System.out.println(value);
+        }
+        if(product.equals("electronics")){
+            value+=5;
+            System.out.println(value);
+
+        }else if(product.equals("fashion")){
+            value+=3;
+            System.out.println(value);
+
+        }else if(product.equals("books")){
+            value+=5;
+            System.out.println(value);
+
+        }else if(product.equals("groceries")){
+            value+=2;
+            System.out.println(value);
+        }
+        double total=loyal+value;
+        System.out.println(total);
+
+        double price=cart*(1-total/100);
+        System.out.println(price);
+
+        double saving=cart-price;
+        System.out.println(saving);
+
+        }
+
+        }
+
+
+
+
+
