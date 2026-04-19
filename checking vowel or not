@@ -1,0 +1,21 @@
+// User function Template for Java
+import java.util.Scanner;
+class Solution {
+    String isVowel(char c) {
+        // code here
+        if(c=='a'||c=='e'||c=='i'||c=='o'||c=='u'||c=='A'|| c=='E'||c=='I'||c=='O'||c=='U'){
+            //System.out.println("YES");
+            return "YES";
+        }else{
+           // system.out.println("NO");
+           return "NO";
+        } 
+    }
+    public static void main(String args[]) {
+            Scanner scan=new Scanner(System.in);
+            char c = scan.next().charAt(0);
+            Solution obj=new Solution();
+            System.out.println(obj.isVowel(c));
+}
+    }
+
