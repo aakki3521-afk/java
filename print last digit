@@ -1,0 +1,13 @@
+import java.util.Scanner;
+class Solution {
+    public int lastDigit(int n) {
+        int rev = n % 10;
+        return rev;
+    }
+    public static void main(String args[]) {
+        Scanner scan = new Scanner(System.in);
+        int n = scan.nextInt();
+        Solution obj = new Solution();
+        System.out.println(obj.lastDigit(n));
+    }
+}
