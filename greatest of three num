@@ -1,0 +1,24 @@
+import java.util.Scanner;
+class Solution {
+    public int greatestOfThree(int a, int b, int c) {
+      
+        if(a>b && a>c){
+            return a;
+        }else if(b>c){
+            return b;
+        }else{
+            return c;
+        }
+        
+    }
+    public static void main(String[] agrs){
+       Scanner scan=new Scanner(System.in);
+       int a=scan.nextInt();
+       int b=scan.nextInt();
+       int c=scan.nextInt();
+       Solution obj=new Solution();
+       System.out.println(obj.greatestOfThree(a,b,c));
+
+       
+    }
+}
