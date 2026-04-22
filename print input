@@ -1,0 +1,13 @@
+import java.util.*;
+
+class GFG {
+    public static void main(String args[]) {
+        // Implement Scanner Class
+        //  Take input
+        //  Add 10 and Print
+        Scanner scan=new Scanner(System.in);
+        int n=scan.nextInt();
+        int rev=n+10;
+        System.out.println(rev);
+    }
+}
