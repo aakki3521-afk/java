@@ -1,0 +1,23 @@
+class Solution {
+    public int nthTerm(int a, int d, int n) {
+        // code here
+        int sec;
+        sec=a*(n-1)*d;
+        return sec;
+        
+    }
+    public static void main(String[] args){
+        Scanner scan=new Scanner(System.in);
+        System.out.println("enter the number: ");
+        int a=scan.nextInt();
+                System.out.println("enter the number: ");
+
+        int d=scan.nextInt();
+                System.out.println("enter the number: ");
+
+        int n=scan.nextInt();
+        Solution obj=new Solution();
+        Ststem.out.println(obj.nthTerm(a,d,n));
+        
+    }
+}
