@@ -1,0 +1,27 @@
+import java.util.*;
+public class array {
+   public static void main(String[] args) {
+        Scanner scan=new Scanner(System.in);
+        int n=scan.nextInt();
+        int [] arr=new int[n];
+        int sum=0;
+        int avg=0;
+        int count=0,i;
+        for( i=0;i<n;i++) {
+            arr[i] = scan.nextInt();
+            sum = sum + arr[i];
+        }
+             avg=sum/n;
+             System.out.println(avg);
+             if(avg<arr[i]){
+                 count++;
+             }System.out.println(count);
+             int total=avg/100;
+             System.out.println(total);
+
+
+    //
+
+    //}
+}
+}
